@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aliceblue;
+        }
+        .entire
+        {
+            width: fit-content;
+            height: fit-content;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: end;
+            align-items: self-end;
+        }
+        img
+        {
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 50px;
+            width: 50px;
+        }
+        .box
+        {
+            margin-top: 15px;
+            border-radius: 10px;
+            width: 500px;
+            height: 600px;
+            box-shadow: 0cm 0cm 1mm 0cm black;
+            background-color: white;
+        }
+        .symbol
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .gologo
+        {
+            margin-right: 10px;
+            height: 65px;
+            width: 190px;
+        }
+        .details
+        {
+            margin-top: 50px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .email
+        {
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            color: gray;
+            height: 40px;
+            width: 350px;
+            border-radius: 5px;
+            border-width: 0.1mm;
+            border-color: rgb(173, 173, 173);
+        }
+        .forgot
+        {
+            margin-top: 1.5mm;
+            margin-bottom: 75px;
+            background-color: white;
+            color: rgb(57, 108, 250);
+            border-width: 0px;
+            border-radius: 10px;
+            width: fit-content;
+            height: fit-content;
+        }
+        .name
+        {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            color: gray; 
+            font-size: smaller;
+            width: fit-content;
+            height: fit-content;
+            margin: 0cm;
+        }
+        .learn
+        {
+            padding-left: 0cm;
+            margin: 0cm;
+            margin-top: 0.5mm;
+            background-color: white;
+            color: rgb(57, 108, 250);
+            border-width: 0px;
+            border-radius: 10px;
+            width: fit-content;
+            height: fit-content;
+        }
+        .su
+        {
+            font-size: 4mm;
+            font-weight: 400;
+            width: 100px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: rgba(0, 84, 179, 0.979);
+            color: white;
+            border-width: 0px;
+        }
+        .su:hover{
+            transition-delay: 1ms;
+            background-color: rgba(0, 84, 179, 0.979);
+            box-shadow: 0mm 0mm 1mm 0mm black;
+        }
+        .sign
+        {
+            margin-top: 50px;
+            margin-right: 50px;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+        }
+        .create
+        {
+            background-color: rgba(255, 255, 255, 0.904);
+            font-size: 4mm;
+            font-weight: 400;
+            width: 150px;
+            height: 35px;
+            border-radius: 20px;
+            color:rgba(0, 84, 179, 0.979) ;
+            border-width: 0cm;
+        }
+        .create:hover 
+        {
+            transition-delay: 0ms;
+            background-color: rgba(224, 224, 224, 0.685);
+        }
+        .forgot:hover 
+        {
+            transition-delay: 0ms;
+            background-color: rgba(224, 224, 224, 0.685);
+        }
+        .learn:hover
+        {
+            transition-delay: 0ms;
+            background-color: rgba(224, 224, 224, 0.685);
+        }
+        button{
+            margin-top: 20px;
+            border-radius: 10px;
+            color:rgba(90, 90, 90, 0.685) ;
+            border-width: 0cm;
+            background-color: aliceblue;
+        }
+        button:hover
+        {
+            transition-delay: 0ms;
+            background-color: rgba(224, 224, 224, 0.685);
+        }
+        .last
+        {
+            margin-right: 1mm;
+            margin-bottom: 2mm;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="entire">
+        <div class="box">
+            <div>
+            <img class="logo" src="glogo.png"/>
+            </div>
+            <div class="symbol">
+                <img  class= "gologo" src="google.png"/>
+                <h2 style="font-family: Arial, Helvetica, sans-serif; font-weight: lighter;">Sign in to Google</h2>
+            </div>
+            <div class="details">
+                <div class="name">
+                    <input class="email" type="text" placeholder="   Email or phone">
+                    <button class="forgot">forgot email ?</button>
+                    <p style="margin-top: 30px;">Not your computer? Use Guest mode to sign in privately.</p>
+                    <button class="learn">Learn more about using Guest mode</button>
+                </div>
+            </div>
+            <div class="sign">
+            <div>
+            <button class="create">Create account</button>
+            <button class="su" >Next</button>
+            </div>
+            </div>
+        </div>
+        <div class="last">
+        <button>help</button>
+        <button>privacy</button>
+        <button>terms</button>
+        </div>
+        <div>    
+        </div>
+    </div>
+</body>
+</html>
